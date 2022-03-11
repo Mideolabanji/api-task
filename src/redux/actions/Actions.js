@@ -1,15 +1,15 @@
 import { ActionTypes } from "../constants/action-types";
 
-export default function setProducts(products) {
+export const setProducts = (products) => {
   return {
     type: ActionTypes.SET_PRODUCTS,
     payload: products,
   };
-}
+};
 
-export default function selectedProducts(product) {
+export const selectedProducts = (product) => {
   return {
     type: ActionTypes.SELECTED_PRODUCTS,
     payload: product,
   };
-}
+};
